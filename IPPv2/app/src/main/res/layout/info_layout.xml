@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_infobg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/addressTV"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="63dp"
+        android:singleLine="true"
+        android:text="Address: "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lot No.: "
+        android:id="@+id/lotnumTV"
+        android:layout_below="@+id/addressTV"
+        android:layout_alignLeft="@+id/addressTV"
+        android:layout_alignStart="@+id/addressTV"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Area: "
+        android:id="@+id/areaTV"
+        android:layout_below="@+id/lotnumTV"
+        android:layout_alignLeft="@+id/lotnumTV"
+        android:layout_alignStart="@+id/lotnumTV"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Utilities: "
+        android:id="@+id/utilTV"
+        android:layout_below="@+id/areaTV"
+        android:layout_alignLeft="@+id/areaTV"
+        android:layout_alignStart="@+id/areaTV"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Accessibility: "
+        android:id="@+id/accsTV"
+        android:layout_below="@+id/utilTV"
+        android:layout_alignLeft="@+id/utilTV"
+        android:layout_alignStart="@+id/utilTV"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ASSESSMENT"
+        android:id="@+id/assTV"
+        android:layout_below="@+id/accsTV"
+        android:layout_alignLeft="@+id/accsTV"
+        android:layout_alignStart="@+id/accsTV"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Commercial/Industrial/Residential Lot"
+        android:id="@+id/typeTV"
+        android:layout_below="@+id/assTV"
+        android:layout_alignLeft="@+id/assTV"
+        android:layout_alignStart="@+id/assTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Owner: "
+        android:id="@+id/ownerTV"
+        android:layout_marginTop="84dp"
+        android:layout_below="@+id/typeTV"
+        android:layout_alignLeft="@+id/typeTV"
+        android:layout_alignStart="@+id/typeTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cellphone No.: "
+        android:id="@+id/cpnumTV"
+        android:layout_below="@+id/owneraddTV"
+        android:layout_alignLeft="@+id/owneraddTV"
+        android:layout_alignStart="@+id/owneraddTV"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Telephone No.: "
+        android:id="@+id/telnumTV"
+        android:layout_below="@+id/cpnumTV"
+        android:layout_alignLeft="@+id/cpnumTV"
+        android:layout_alignStart="@+id/cpnumTV"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Address: "
+        android:id="@+id/owneraddTV"
+        android:layout_below="@+id/ownerTV"
+        android:layout_alignLeft="@+id/ownerTV"
+        android:layout_alignStart="@+id/ownerTV"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="E-mail Address: "
+        android:id="@+id/emailTV"
+        android:layout_below="@+id/telnumTV"
+        android:layout_alignLeft="@+id/telnumTV"
+        android:layout_alignStart="@+id/telnumTV"
+        android:layout_marginTop="6dp" />
+</RelativeLayout>

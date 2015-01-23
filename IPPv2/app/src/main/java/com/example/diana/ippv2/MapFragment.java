@@ -5,11 +5,11 @@ import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.model.*;
 import com.google.android.gms.maps.GoogleMap;
 import android.support.v4.app.FragmentActivity;
-import com.google.android.gms.maps.CameraUpdateFactory;
-
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap.OnMarkerClickListener;
 
-public class MapFragment extends FragmentActivity implements OnMapReadyCallback
+public class MapFragment extends FragmentActivity implements OnMapReadyCallback, OnMarkerClickListener
 {
     private SupportMapFragment sMapFragment;
 
@@ -34,10 +34,21 @@ public class MapFragment extends FragmentActivity implements OnMapReadyCallback
         mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ILOILO, 12));
 
-        mMap.addMarker(new MarkerOptions()
-                .title("Empty Lot 1")
-                .snippet("blah blah blah")
-                .position(one)
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        Marker oneJRD = mMap.addMarker(new MarkerOptions()
+                            .title("Lot ID: 0115-0001JRD")
+                            .snippet("Click for more info")
+                            .position(one)
+                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+
+        oneJRD.showInfoWindow();
+        mMap.setOnMarkerClickListener(this);
+    }
+
+    @Override
+    public boolean onMarkerClick (Marker marker)
+    {
+        setContentView(R.layout.info_layout);
+
+        return false;
     }
 }
